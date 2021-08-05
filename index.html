@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+<body class="bg-gradient-to-tl from-purple-900 via-indigo-900 to-blue-900 h-screen overflow-hidden">
+    <h1 class="font-serif text-7xl font-semibold text-center text-gray-200 m-20">Weather App</h1>
+    <div class="flex items-center justify-center flex-col p-8">
+        <form id="form-element" action="#">
+            <input id="sbox" type="text" class= "border rounded py-3 px-4 text-gray-400 w-96" placeholder="Search for a city ..." required>
+            <button id="sbutton" type="submit" class="bg-indigo-300 bg-opacity-75 hover:bg-indigo-500 text-white font-bold py-3 px-4 m-1 rounded">Search</button>
+            <svg id='locationIcon' class="w-12 inline-block text-gray-200 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+        </form>
+    </div>
+    <!-- Wrapper div -->
+    <div id='card' class="flex justify-center">
+        <!-- Card or contents that should be centered -->
+        <div class="rounded-lg shadow-2xl h-96 w-96 bg-red-50 bg-opacity-25 m-20 font-bold text-center text-gray-200 leading-10 space-y-6 pb-28 font-Georgia">
+                <img id='icon' src="" alt="" class="w-36 mx-32">
+                <h1 id='temp' class="text-6xl">15° C</h1>
+                <h3 id='conditions' class="text-2xl">cloudy</h3>
+                <h1 id="city" class="text-3xl">Wiesbaden, DE</h1>
+        </div>
+    </div>
+    <script defer src="script.js"></script>   
+</body>
+
+</html>
