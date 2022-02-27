@@ -1,4 +1,4 @@
-const API_KEY = "7d656f0172607e3d5815f5880ef39f13";
+const API_KEY = "06a229a09de1aed76f492eb114f80db3";
 const locationIcon = document.querySelector('#locationIcon');
 
 let weather = {
